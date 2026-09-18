@@ -25,6 +25,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.da1.ejercicios.implementaciones.Greeting
 import com.da1.ejercicios.implementaciones.Presentacion
+import com.da1.ejercicios.implementaciones.fichaEstudiante
 import com.da1.ejercicios.ui.theme.DA1EjerciciosTheme
 
 
@@ -144,7 +145,15 @@ fun NavegacionEjercicios() {
                     Text("<- Volver")
                 }
 
-                Presentacion()
+                fichaEstudiante()
+            }
+
+            "ejercicio4" -> {
+                Button(onClick = { pantallaActual = "menu" }) {
+                    Text("<- Volver")
+                }
+
+                fichaEstudiante()
             }
         }
     }
